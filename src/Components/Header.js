@@ -15,6 +15,7 @@ const Header = () => (
               <li><Link to="/faq">FAQs</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/ImageCarousel">Gallery</Link></li>
             </ul>   
             <a className='menu-trigger'>
               <span>Menu</span>

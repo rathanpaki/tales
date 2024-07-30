@@ -1,13 +1,9 @@
 // src/pages/Contact.js
-import React from 'react';
-import PreHeader from './PreHeader';
-import Header from './Header';
-import Footer from './Footer';
+import React from "react";
+
 
 const Contact = () => (
   <>
-    <PreHeader />
-    <Header />
     <div className="contact-us section" id="contact">
       <div className="container">
         <div className="row">
@@ -109,24 +105,28 @@ const Contact = () => (
                     <div className="row">
                       {[
                         { icon: "fa fa-phone", text: "010-020-0340" },
-                        { 
-                          icon: "fa fa-envelope", 
-                          texts: ["info@company.com", "hello@company.com"]
+                        {
+                          icon: "fa fa-envelope",
+                          texts: ["info@company.com", "hello@company.com"],
                         },
-                        { 
-                          icon: "fa fa-map-marker", 
-                          text: "Sunny Isles Beach, FL 33160, United States"
-                        }
+                        {
+                          icon: "fa fa-map-marker",
+                          text: "Sunny Isles Beach, FL 33160, United States",
+                        },
                       ].map((item, index) => (
                         <div className="col-lg-4" key={index}>
                           <div className="info-item">
                             <i className={item.icon}></i>
                             {item.texts ? (
                               item.texts.map((text, i) => (
-                                <h4 key={i}><a href="#">{text}</a></h4>
+                                <h4 key={i}>
+                                  <a href="#">{text}</a>
+                                </h4>
                               ))
                             ) : (
-                              <h4><a href="#">{item.text}</a></h4>
+                              <h4>
+                                <a href="#">{item.text}</a>
+                              </h4>
                             )}
                           </div>
                         </div>
@@ -140,7 +140,6 @@ const Contact = () => (
         </div>
       </div>
     </div>
-    <Footer />
   </>
 );
 

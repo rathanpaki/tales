@@ -4,15 +4,20 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import FAQ from "./Components/FAQ";
 import Contact from "./Components/Contact";
+import PreHeader from "./Components/PreHeader";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import ImageCarousel from "./Components/ImageCarousel";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<> <PreHeader /> <Header /> <Home /> <Footer/> </>} />
+        <Route path="/about" element={<> <PreHeader /> <Header /> <About /> <Footer/> </>} />
+        <Route path="/faq" element={<> <PreHeader /> <Header /> <FAQ/> <Footer/> </>} />
+        <Route path="/contact" element={<> <PreHeader /> <Header /> <Contact /> <Footer/> </>} />
+        <Route path="/ImageCarousel" element={<><PreHeader/><Header/><ImageCarousel/><Footer/></>}/>
       </Routes>
     </Router>
   );

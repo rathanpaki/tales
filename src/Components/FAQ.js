@@ -1,13 +1,9 @@
 // src/pages/FAQ.js
 import React from "react";
-import PreHeader from "./PreHeader";
-import Header from "./Header";
-import Footer from "./Footer";
+
 
 const FAQ = () => (
   <>
-    <PreHeader />
-    <Header />
     <div className="page-heading">
       <div className="container">
         <div className="row">
@@ -220,7 +216,6 @@ const FAQ = () => (
         </div>
       </div>
     </div>
-    <Footer />
   </>
 );
 
